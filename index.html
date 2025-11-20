@@ -1,0 +1,287 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portofolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Abdul Karim</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Abdul Karim</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <div class="left-column">
+        <img src="Group 5.png" alt="" />
+      </div>
+      <div class="right-column">
+        <div class="contact">
+          <p>Hello, I am</p>
+          <h1 class="name">Abdul Karim</h1>
+          <h2 class="career">Junior Developer</h2>
+          <div class="button-section">
+            <button class="button-cv">Download CV</button>
+            <button class="button-contact">Contact Info</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us-section">
+      <div class="about-us-header">
+        <p>Get to know me more</p>
+        <h2>About Me</h2>
+      </div>
+      <div class="about-us-content">
+        <img src="Rectangle 3.png" alt="" />
+        <div class="about-us-text">
+          <p>
+            Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate libero et velit interdum, ac aliquet odio mattis. Class
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos. Korem ipsum dolor sit amet, consectetur
+            adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet
+            odio mattis. Class aptent taciti sociosqu ad litora torquent per
+            conubia nostra, per inceptos himenaeos. Korem ipsum dolor sit amet,
+            consectetur adipiscing elit. Nunc vulputate libero et velit
+            interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad
+            litora torquent per conubia nostra, per inceptos himenaeos.Korem
+            ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+            libero et velit interdum, ac aliquet odio mattis. Class aptent
+            taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+            himenaeos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="exp-section">
+      <div class="exp-header">
+        <p>Explore my</p>
+        <h2>Academic & Organizational Journey</h2>
+      </div>
+      <div class="timeline-container">
+        <div class="timeline timeline-left">
+          <div class="timeline-item">
+            <div class="circle"></div>
+            <div class="content">
+              <h3>2022/2023</h3>
+              <h3>Anggota Divisi Humas<br />UKM Catur QPCC</h3>
+              <p>
+                Mengelola hubungan antarorganisasi dan media sosial UKM QPCC
+                untuk memperluas jaringan serta meningkatkan partisipasi
+                anggota.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="circle"></div>
+            <div class="content">
+              <h3>2023/2024</h3>
+              <h3>Ketua Umum<br />UKM Catur QPCC</h3>
+              <p>
+                Memimpin dan mengoordinasikan seluruh divisi UKM QPCC dalam
+                menjalankan program kerja strategis dengan lingkungan
+                kolaboratif.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline timeline-right">
+          <div class="timeline-item">
+            <div class="circle"></div>
+            <div class="content">
+              <h3>2021-2025</h3>
+              <h3>S1 - Informatika<br />Universitas Muhammadiyah Malang</h3>
+              <p>
+                Mempelajari perancangan dan pengembangan perangkat lunak,
+                analisis kebutuhan, desain arsitektur, pengujian, dan manajemen
+                proyek berbasis teknologi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work">
+      <div class="work-header">
+        <h2>Work Experience</h2>
+      </div>
+      <div class="experience-wrapper">
+        <div class="experience-left">
+          <div class="timeline-line"></div>
+
+          <div class="company-list">
+            <div class="company active" data-target="exp1">
+              <h3>Diskominfo Kota Batu</h3>
+            </div>
+            <div class="company" data-target="exp2">
+              <h3>Codexa</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-right">
+          <div class="exp-content active" id="exp1">
+            <h3>Magang di Diskominfo Kota Batu</h3>
+            <p class="date">Juli – Agustus 2024</p>
+            <ul>
+              <li>
+                Melakukan analisis kebutuhan sistem dengan tim Diskominfo.
+              </li>
+              <li>
+                Merancang struktur dan antarmuka website yang user-friendly.
+              </li>
+              <li>
+                Mengembangkan prototype website portal berita TV Desa Kota Batu.
+              </li>
+            </ul>
+          </div>
+          <div class="exp-content" id="exp2">
+            <h3>Front-End Developer – Codexa</h3>
+            <p class="date">2023</p>
+            <ul>
+              <li>
+                Membangun antarmuka website menggunakan React dan Tailwind.
+              </li>
+              <li>Berkoordinasi dengan tim UI/UX untuk implementasi desain.</li>
+              <li>Optimasi performa website hingga 40% lebih cepat.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="portfolio-header">
+        <h2>Portfolio</h2>
+      </div>
+
+      <div class="carousel-container">
+        <div class="portfolio-content" id="carousel">
+          <div class="card">
+            <img src="Mockup.png" alt="" />
+            <div class="card-overlay"><h3>Naru Branch Tech</h3></div>
+          </div>
+          <div class="card">
+            <img src="Mockup-1.png" alt="" />
+            <div class="card-overlay"><h3>TV Desa Kota Batu</h3></div>
+          </div>
+          <div class="card">
+            <img src="Mockup.png" alt="" />
+            <div class="card-overlay"><h3>Naru Branch Tech</h3></div>
+          </div>
+          <div class="card">
+            <img src="Mockup-1.png" alt="" />
+            <div class="card-overlay"><h3>TV Desa Kota Batu</h3></div>
+          </div>
+          <div class="card">
+            <img src="Mockup.png" alt="" />
+            <div class="card-overlay"><h3>Naru Branch Tech</h3></div>
+          </div>
+          <div class="card">
+            <img src="Mockup-1.png" alt="" />
+            <div class="card-overlay"><h3>TV Desa Kota Batu</h3></div>
+          </div>
+          <div class="card">
+            <img src="Mockup.png" alt="" />
+            <div class="card-overlay"><h3>Naru Branch Tech</h3></div>
+          </div>
+          <div class="card">
+            <img src="Mockup-1.png" alt="" />
+            <div class="card-overlay"><h3>TV Desa Kota Batu</h3></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-dots" id="carouselDots"></div>
+    </section>
+
+    <section class="skills">
+      <div class="skills-header">
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-content">
+        <div class="skills-category">
+          <h3>Web Design</h3>
+          <p>UI/UX Design</p>
+          <p>Wireframing</p>
+          <p>Responsive Design</p>
+        </div>
+        <div class="skills-category">
+          <h3>Frontend</h3>
+          <p>HTML5</p>
+          <p>CSS3</p>
+          <p>Javascript</p>
+        </div>
+        <div class="skills-category">
+          <h3>Backend</h3>
+          <p>Laravel</p>
+          <p>MySQL</p>
+          <p>MVC Architecture</p>
+          <p>REST API</p>
+        </div>
+        <div class="skills-category">
+          <h3>Soft Skills</h3>
+          <p>Effective Communication</p>
+          <p>Adaptability</p>
+          <p>Commitment</p>
+          <p>Fast Learner</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-header">
+        <p>Get in touch</p>
+        <h2>Contact Me</h2>
+      </div>
+      <div class="contact-box">
+        <div class="contact-item email">
+          <i class="fas fa-envelope"></i>
+          <span><p>akarim18641@gmail.com</p></span>
+        </div>
+        <div class="contact-item linkedin">
+          <i class="fab fa-linkedin"></i> <span><p>Abdul Karim</p></span>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
