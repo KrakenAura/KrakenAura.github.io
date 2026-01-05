@@ -442,7 +442,7 @@ section {
   left: 0;
   width: 100%;
   padding: 2rem 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   text-align: center;
 }
 
@@ -472,6 +472,24 @@ section {
 .carousel-dots button.active {
   background: #333;
   transform: scale(1.25);
+}
+
+.detail-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.6rem;
+  background: #fff;
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.detail-btn:hover {
+  background: var(--color-light-gray);
+  color: var(--color-dark-gray);
 }
 
 /* SKILLS */
@@ -646,3 +664,5 @@ section {
     font-size: 1.7rem;
   }
 }
+
+

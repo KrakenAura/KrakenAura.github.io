@@ -26,40 +26,46 @@ companies.forEach((company) => {
   });
 });
 
-/* --- Kode JavaScript yang Diperbaiki (Gunakan ini) --- */
+// const carousel = document.getElementById("carousel");
 
-const carousel = document.getElementById("carousel");
+// const dotsContainer = document.getElementById("carouselDots");
+// const cards = document.querySelectorAll(".card");
 
-const dotsContainer = document.getElementById("carouselDots");
-const cards = document.querySelectorAll(".card");
+// const cardWidth = 520;
+// let index = 0;
 
-const cardWidth = 520; 
-let index = 0;
+// // Create dots
+// cards.forEach((_, i) => {
+//   const dot = document.createElement("button");
+//   if (i === 0) dot.classList.add("active");
+//   dot.addEventListener("click", () => {
+//     index = i;
+//     updateCarousel();
+//   });
+//   dotsContainer.appendChild(dot);
+// });
 
-// Create dots
-cards.forEach((_, i) => {
-  const dot = document.createElement("button");
-  if (i === 0) dot.classList.add("active");
-  dot.addEventListener("click", () => {
-    index = i;
-    updateCarousel();
-  });
-  dotsContainer.appendChild(dot);
+// const dots = dotsContainer.querySelectorAll("button");
+
+// function updateCarousel() {
+//   carousel.scrollTo({
+//     left: index * cardWidth,
+//     behavior: "smooth",
+//   });
+
+//   dots.forEach((d) => d.classList.remove("active"));
+//   dots[index].classList.add("active");
+// }
+
+// setInterval(() => {
+//   index = (index + 1) % cards.length;
+//   updateCarousel();
+// }, 4000);
+
+document.getElementById("downloadCV").addEventListener("click", () => {
+  window.open("CV-Abdul-Karim.pdf", "_blank");
 });
 
-const dots = dotsContainer.querySelectorAll("button");
-
-function updateCarousel() {
-  carousel.scrollTo({
-    left: index * cardWidth,
-    behavior: "smooth",
-  });
-
-  dots.forEach((d) => d.classList.remove("active"));
-  dots[index].classList.add("active");
-}
-
-setInterval(() => {
-  index = (index + 1) % cards.length;
-  updateCarousel();
-}, 4000);
+document.getElementById("contactMe").addEventListener("click", () => {
+  window.location.href = "mailto:akarim18641@gmail.com";
+});

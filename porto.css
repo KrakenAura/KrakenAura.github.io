@@ -1,0 +1,56 @@
+:root {
+  --font-family-base: "Inter", sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 900;
+
+  --font-size-h1: 4rem;
+  --font-size-h2: 2.5rem;
+  --font-size-h3: 2rem;
+  --font-size-p: 1.5rem;
+
+  --color-base: #efefef;
+  --color-dark-gray: #424242;
+  --color-black: #0e0707;
+  --color-light-gray: #d9d9d9;
+  --color-gray: #646464;
+  --button-hover: #e24f35;
+}
+
+.kembali {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--color-gray);
+}
+
+.portfolio-section {
+  padding: 0px 60px;
+}
+
+.portfolio-info {
+  display: flex;
+  margin: 3rem 0rem;
+}
+
+.portfolio-image {
+  width: 60%;
+}
+.portfolio-detail {
+  width: 40%;
+}
+
+.portfolio-image img {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 20px;
+}
+
+.portfolio-detail {
+  padding: 2rem;
+}
+
+.portfolio-title {
+  color: var(--color-black);
+}
