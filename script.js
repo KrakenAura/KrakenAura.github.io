@@ -63,7 +63,7 @@ companies.forEach((company) => {
 // }, 4000);
 
 document.getElementById("downloadCV").addEventListener("click", () => {
-  window.open("CV-Abdul-Karim.pdf", "_blank");
+  window.open("CV - Abdul-Karim.pdf", "_blank");
 });
 
 document.getElementById("contactMe").addEventListener("click", () => {
